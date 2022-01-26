@@ -43,17 +43,17 @@ function filter_files_dir($files_array, string $path) : array {
 
 $not_found_error = '<h1>File not found, error 404</h1>';
 
-if(!$files_in_folder) {
-	echo($not_found_error);
-	die();
-}
-
 $basedir = 'content';
 $request_uri = $_SERVER['REQUEST_URI'];
 
 $path = $basedir . $request_uri;
-$files_in_folder = scandir($path);
 
+if(!is_dir($path)) {
+	echo($not_found_error);
+	die();
+}
+
+$files_in_folder = scandir($path);
 $resource_array = filter_files_dir($files_in_folder, $path);
 
 // Show folder links
