@@ -7,5 +7,6 @@ $header = <<<HEADER
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="description" content="Els fitxers de Dusk">
     <link rel="icon" type="image/png" href="static/favicon.png" sizes="32x32">
+    <link rel="stylesheet" type="text/css" href="static/style.css" />
 </head>
 HEADER;

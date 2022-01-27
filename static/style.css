@@ -1,0 +1,11 @@
+body {
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+a, a:visited {
+    color: orange;
+}
+a:hover, a:active {
+    color: pink;
+}
