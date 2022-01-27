@@ -94,8 +94,8 @@ echo("\n");
 
 echo("\n");
 
-$base_url = base_url();
-$parent_url = parent_url();
+$base_url = base_url(get_protocol());
+$parent_url = parent_url(get_protocol());
 
 //Navigation
 echo <<<NAV
@@ -105,7 +105,9 @@ echo <<<NAV
 <li><a href={$parent_url}>Arrere</a></li>
 </ul>
 </nav>
+
 NAV;
+
 ?>
 </body>
 </html>
